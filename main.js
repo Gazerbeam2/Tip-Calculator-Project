@@ -7,6 +7,7 @@ const decimalTipPercentage = parseInt(document.querySelector("#tipAmount").value
 const tipAmount = decimalTipPercentage * billCost;
 const totalBillCost =  tipAmount + billCost;
 
+document.querySelector('.tipAmountDisplay').innerText = "$" + tipAmount;
 document.querySelector('.totalAmount').innerText = "$" + totalBillCost;
 
 }

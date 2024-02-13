@@ -13,14 +13,22 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, h3, h4, p,
-figure, blockquote, dl, dd {
-  margin-block-end: 0;
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -31,14 +39,21 @@ body {
 }
 
 /* Set shorter line heights on headings and interactive elements */
-h1, h2, h3, h4,
-button, input, label {
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
   line-height: 1.1;
 }
 
 /* Balance text wrapping on headings */
-h1, h2,
-h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   text-wrap: balance;
 }
 
@@ -56,8 +71,10 @@ picture {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button,
-textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -71,63 +88,73 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#17181D;
+/* Reset Ends Here */
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #17181d;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    padding:4em;
-    border-radius:25px;
-    background-color:#292C35;
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  padding: 3em;
+  border-radius: 25px;
+  background-color: #292c35;
 }
-h1{
-    font-size: 3rem;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 700;
-    padding: 0.5em;
-    text-align: center;
-    color: #E09145;
-
+h1 {
+  font-size: 3rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 700;
+  padding: 0.5em;
+  text-align: center;
+  color: #e09145;
 }
-p{
-    font-size:1.5rem;
-    font-family: 'Outfit', sans-serif;
-    font-weight: 400;
-    padding: 0.5em;
-    color:#FCD9B8;
-}
-
-span{
-    font-size:1.2rem;
-    font-family:'Outfit',sans-serif;
-    font-weight:300;
-    padding: 0.7em;
-    color:#FCD9B8;
+p {
+  font-size: 1.5rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 400;
+  padding: 0.5em;
+  color: #fcd9b8;
 }
 
-button{
-    padding:0.3em;
-    margin-top:1.8em;
+span {
+  font-size: 1.2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  padding: 0.7em;
+  color: #fcd9b8;
 }
 
-.total{
-    text-align:center;
+button {
+  padding: 0.3em;
+  margin-top: 1.8em;
 }
 
+.total {
+  text-align: center;
+}
 
-
-.totalAmount{
-    font-size:2rem;
-    font-family:'Outfit',sans-serif;
-    font-weight:300;
-    text-align:center;
-    border:1px solid black;
-    border-radius: 25px;
+.tipDollarAmount {
+  text-align: center;
+}
+.tipAmountDisplay {
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.totalAmount {
+  font-size: 2rem;
+  font-family: "Outfit", sans-serif;
+  font-weight: 300;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
 }
